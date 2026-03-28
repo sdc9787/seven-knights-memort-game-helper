@@ -1,0 +1,5 @@
+{
+  "name": "세나 리버스 메모리 헬퍼",
+  "description": "세븐나이츠 리버스(Seven Knights Reverse) 카드 뒤집기 미니게임을 위한 실시간 OCR 보조 도구입니다. Tesseract.js를 사용하여 카드의 위치를 자동으로 기억하고 PiP 모드로 가이드를 제공합니다.",
+  "requestFramePermissions": ["display-capture"]
+}
