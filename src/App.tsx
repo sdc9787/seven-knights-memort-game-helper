@@ -694,7 +694,7 @@ export default function App() {
             <div className="flex items-center gap-2">
               <div className={`px-3 py-1 rounded-full text-xs font-medium flex items-center gap-2 ${isStreaming ? 'bg-green-500/10 text-green-400 border border-green-500/20' : 'bg-zinc-800 text-zinc-400'}`}>
                 <div className={`w-1.5 h-1.5 rounded-full ${isStreaming ? 'bg-green-400 animate-pulse' : 'bg-zinc-500'}`} />
-                {isStreaming ? '라이브' : '대기중'}
+                <span>{isStreaming ? '라이브' : '대기중'}</span>
               </div>
 
               {isStreaming && (
@@ -702,7 +702,7 @@ export default function App() {
                   {isRecording && (
                     <div className="px-3 py-1 rounded-full text-xs font-medium flex items-center gap-2 bg-orange-500/10 text-orange-400 border border-orange-500/20 animate-pulse">
                       <div className="w-1.5 h-1.5 rounded-full bg-orange-400" />
-                      기록중
+                      <span>기록중</span>
                     </div>
                   )}
                 </>
@@ -717,7 +717,7 @@ export default function App() {
                 }`}
             >
               {isStreaming ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4" />}
-              {isStreaming ? '중단' : '시작'}
+              <span>{isStreaming ? '중단' : '시작'}</span>
             </button>
           </div>
         </div>
